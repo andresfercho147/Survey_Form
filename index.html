@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/cd2331958e.js" crossorigin="anonymous"></script>
+  <!--Incluir iconos-->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!--Incluir Bootstrap-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+  <!--Incluir Google Fonts-->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header text-center pb-4">
+      <h1 id="title" class="center-text">FreeCodeCamp Survey Form</h1>
+      <p id="description" class="center-text"><i> Thank you for taking the time to help us improve the plataform</i></p>
+    </header>
+    <form id="survey-form" class="">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age <span class="text-muted">(Optional)</span></label>
+        <input type="number" class="form-control" name="age" id="number" placeholder="Age" min="18" max="100">
+      </div>
+      <div class="form-group">
+        <label for="role">Which option best describes your current role?</label>
+        <select name="role" id="dropdown" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferno">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <div class="form-check">
+          <input name="user-recommend" value="definitely" id="radio-option1" type="radio" class="form-check-input"
+            checked>
+          <label class="form-check-label" for="radio-option1">Definitely</label>
+        </div>
+        <div class="form-check">
+          <input name="user-recommend" value="maybe" id="radio-option2" type="radio" class="form-check-input">
+          <label class="form-check-label" for="radio-option2">Maybe</label>
+        </div>
+        <div class="form-check">
+          <input name="user-recommend" value="not-sure" id="radio-option3" type="radio" class="form-check-input">
+          <label class="form-check-label" for="radio-option3">Not sure</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <p>What is your favorite feature of freeCodeCamp?
+        <p>
+          <select name="most-like" id="most-like" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="opensource">Open Source</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <p> What would you like to see improved? <span class="text-muted">(Check all that apply)</span></p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="front-end-projects" name="prefer"
+            value="front-end-projects">
+          <label class="form-check-label" for="front-end-projects">Front-end Projects</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="back-end-projects" name="prefer"
+            value="back-end-projects">
+          <label class="form-check-label" for="back-end-projects">Back-end Projects</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="data-visualization" name="prefer"
+            value="data-visualization">
+          <label class="form-check-label" for="data-visualization">Data Visualization</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="challenges" name="prefer" value="challenges">
+          <label class="form-check-label" for="challenges">Challenges</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="open-source-community" name="prefer"
+            value="open-source-community">
+          <label class="form-check-label" for="open-source-community">Open Source Community</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea class="form-control" name="comment" id="comments" rows="4"
+          placeholder="Enter your comment here..."></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="btn btn-primary  btn-lg btn-block">Submit</button>
+      </div>
+    </form>
+  </div>
+  <footer>
+    <div class="container text-center">
+      <p>© 2020 Survey Form. All Rights Reserved | Design by Andres Ceballos</p>
+      <div class="mb-3">
+        <a href=""><i class="p-2 fab fa-twitter fa-sm"></i></a>
+        <a href=""><i class="p-2 fab fa-facebook-f fa-sm"></i></a>
+        <a href=""><i class="p-2 fab fa-instagram fa-sm"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/jquery.js"></script> <!-- Incluir jquery -->
+  <script src="./js/bootstrap.min.js"></script><!-- Incluir Bootstrap -->
+</body>
+</html>
