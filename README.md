@@ -6,4 +6,4 @@ Responsive Web Design Projects - Build a Survey Form
 
 
 ### Enlace de la página
-https://andresfercho147.github.io/Survey_Form/
+https://andresfercho147.github.io/SmartAgency/
